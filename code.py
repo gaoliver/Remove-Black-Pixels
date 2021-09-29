@@ -27,8 +27,8 @@ def removeOnes(matrix):
                 i.remove(1)
                 i.insert(0, 0)
             elif (i[-1] == 1):
-                i.pop(-1)
-                i.insert(-1, 0)
+                i.pop()
+                i.append(0)
             else:
                 break
         newMatrix.append(i)
